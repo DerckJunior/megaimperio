@@ -1,68 +1,129 @@
-/*PAGINA DE LOGIN*/
-
-.russo-one-regular {
-    font-family: "Russo One", sans-serif;
-    font-weight: 400;
-    font-style: lighter;
-  }
-  
-.new-amsterdam-regular {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-
-
-
-h1{
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-html, body{
-    
-   height: 100%;
-}
-
 body{
+    background-color: #0e1621;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+
+    color: white;
     
+}
+
+
+
+
+.ecra-principal{
+    background-color: rgb(8, 34, 7);
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+section{
+    background-color: #0e1621;
+    height: 100%;
+    width: 70px;
+}
+
+section > div{
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    width: 70px;
+    
+    margin-bottom: 20px;
+
+}
+
+.opcoes{
     background-color: #0e1621;
 
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu{
+
+
+ position: relative;
+ top: 50%;
+ left: 50%;
+
+ transform: translate(-50%, -50%);
+
+
+}
+
+.chats{
+    background-color: #0e1621;
+}
+
+.grupos{
+    background-color: #0e1621;
+
+}
+
+.canais{
+    background-color: #0e1621;
+
 }
 
 
-.formulario{
-    background-color: #232f3d73;
-    margin: auto;
-    color: white;
-    border-radius: 10px;
-    padding: 40px;
+.conversas{
 
-    width: 400px;
+    background-color: #17212b;
+    height: 100%;
+    width: 500px;
 
 }
 
 
 
-.centralizado{
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #0e1621;
 
+}
+
+
+
+header{
     text-align: center;
-
-}
-
-footer{
-
     background-color: #232f3d;
 }
 
 
-input{
+footer{
+    text-align: center;
+    background-color: #232f3d;
+    
+}
 
+
+
+
+
+.centralizado{
+    text-align: center;
+}
+
+
+
+
+
+
+
+input{
     outline: none;
+}
+
+a{
+    color: white;
+       
+}
+
+a:hover{
+    color: black;
+
 }
