@@ -6,7 +6,7 @@
     <title>Iniciar sessao</title>
     <style>
 
-        *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,19 +14,17 @@
 
 
 /*PAGINA DE LOGIN*/
-
+/*
 .russo-one-regular {
     font-family: "Russo One", sans-serif;
-    font-weight: 400;
     font-style: lighter;
   }
   
 .new-amsterdam-regular {
     font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
     font-style: normal;
   }
-  
+  */
   
 
 
@@ -51,7 +49,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/*edit do formulario, a caixa de login*/
 .formulario{
     background-color: #232f3d73;
     margin: auto;
@@ -63,34 +61,80 @@ body{
 
 }
 
-
-
 .centralizado{
 
     text-align: center;
 
 }
 
+/*footer edit*/
 footer{
 
     background-color: #232f3d;
 }
+/*termino de footer*/
 
 
-input{
-
-    outline: none;
-}
 
 p{
     align-items: center;
     text-align: center;
     align-content: center;
 }
-.header{
-    background-color: #232f3d;
-    margin-top: 0;
+
+.space{
+  margin-top: 1%;
 }
+/*termino*/
+
+
+
+
+/*css para o login form*/
+header{
+    background:  #232f3d;
+    margin-top: 0;
+    font-family: "Russo One", sans-serif;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 25px;
+            color: white;
+            font-size: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+}
+
+button:hover{
+    background-color: deepskyblue;
+}
+/*ter,imo do css dos impus*/
+
+
+
+
+
+/* css dos imputs*/
+input{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+}
+
+.others{
+  background-color: #232f3d;
+  width: 20%;
+}
+/*termido do edit input*/
     </style>
 
 <!--Inicio dos links-->
@@ -107,68 +151,60 @@ p{
 <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 <!--final dos links-->
 </head>
-<!--corpo-->
 
 
 <body class="text-light" style="height: 110vh;">
-<!--header-->
+<!--header
     <header>
      <p>
 
      </p>
-    </header>
-<!--header-->
+    </header>-->
+
+
+
+<header>
+  <p class="space">Bem Vindo a Comunidade MEGA IMPERIO</p>
+  <p>-Criada e Desenvolvida Para Grande-</p>
+</header>
 
 
 <!--mensagem de boas vindas e motivacao-->
-<div class="header">
+<!--<div class="header">
     <h1 class="centralizado russo-one-regular">Bem Vindo! a Comunidade MEGA IMPERIO</h1>
 
     <h2 class="centralizado new-amsterdam-regular ">&#9733;&#9733;&#9733;Criada e desenvolvida para ser Grande&#9733;&#9733;&#9733;</h2>
 </div> 
-<!--mensagem de boas vindas e motivacao-->
+mensagem de boas vindas e motivacao-->
 
 
-<!--start of login form-->
-<div class="formulario">
-    <h1>Login</h1>
 
 
-<!--inicio da caixa-->4
-    <form action="menu.html" method="get">
 
-        <p>
-            <label for="name">Nome:</label><br>
-<input type="text" name="name" id="" placeholder="Nome" required>
-<i class="fa-solid fa-user"></i>
-        </p>
-
-
-        <p>
-            <label for="password">Password:</label><br>
-<input type="password" name="password" placeholder="Senha" required>
-<i class="fa-solid fa-key"></i>
-        </p>
-
-        <p>
-            <label for="">
-
-                
-            </label><input type="submit" value="Entrar">
-        </p>
-        </form>
-
-        <p>
-            <a href="#"><input type="checkbox"> Esqueceu a palavra passe?</a>
-        </p>
-
+<!--preparacao de umajanela
+<div style="float: right;" class="others">
+  <h2>hello</h2>
+</div>
+-->
+    <div class="formulario">
+      <div class="box">
+        <h1>Login</h1>
+        <i class="fa-solid fa-user"></i><input type="text" placeholder="Nome" required>
+        <br><br>
+        <i class="fa-solid fa-key"></i><input type="password" placeholder="Senha" required>
+        <br><br>
+        <button>Entrar</button><br>
+        <a href="#">Nova Conta</a>
+      </div>
     </div>
-    <!--finsh of login form-->
+<!--finsh of login form-->
 
+
+<!--footer html-->
     <footer>
         <p class="centralizado">"Juntos formamos um imperio"</p>
         <p>© MEGA IMPERIO</p>
     </footer>
-
+<!--termino footer html-->
 </body>
 </html>
