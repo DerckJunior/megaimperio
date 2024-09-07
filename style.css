@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color: #0e1621;
     display: flex;
     flex-direction: column;
@@ -125,4 +125,137 @@ a{
 a:hover{
     color: black;
 
+}*/
+
+
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+/*inicio de navegador*/
+li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul{
+    text-align: center;
+}
+
+.one{
+  float: left;
+  margin-left: 10px;
+  color: white;
+}
+
+.two{
+    float: right;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color: #0e1621;
+    position: fixed;
+    width: 100%;
+    color: white;
+    height: 30px;
+    align-content: center;
+}
+/*fim de navegador*/
+div{
+    background-color:#0e1621;
+    width: 25%;
+    height: 590px;
+    display: inline-block;
+    /*float: left*/
+    color: white;
+}
+
+.chat{
+    display: inline-block;
+    width: 74%;
+    border-radius: 30px;
+    border: 1px solid #0e1621;
+    background-color: #232f3d;
+    /*float: right*/
+    height: 535px;
+    margin-top: 35px;
+    position: fixed;
+    margin-left: 10px;
+}
+
+body{
+    background-color: #0e1621;
+    flex-wrap: wrap;
+}
+
+input{
+    margin-top: 450px;
+    width: 90%;
+    border-radius: 30px;
+    padding: 20px 40px;
+    margin-left: 10px;
+    background-color: #0e1621;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.pesquisa{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 0px;
+    color: white;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    margin-left: 10px;
+    outline: none;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+button{
+    padding: 20px 20px;
+    margin-left: 10px;
+    border-radius: 100px;
+    color: white;
+    background-color: #0e1621;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background-color: #0e1621;
+    color: white;
+    border: 1px solid orange;
+}
+
+.navegador-artigos{
+    display: flex-end;
+    border: 1px solid white;
+    width: 90%;
+    height: 40px;
+    margin-top: 450px;
+    margin-left: 10px;
+    align-content: center;
+    border-left: none;
+    border-right: none;
+}
+
+.nv-art{
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
