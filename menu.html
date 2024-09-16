@@ -1,198 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEGA IMPERIO</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
-<style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/inicio de navegador/
-li{
-    display: inline-block;
-    text-decoration: none;
-}
-
-ul{
-    text-align: center;
-}
-
-.one{
-  float: left;
-  margin-left: 10px;
-  color: white;
-}
-
-.two{
-    float: right;
-    margin-right: 10px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-nav{
-    background-color: #0e1621;
-    position: fixed;
-    width: 100%;
-    color: white;
-    height: 30px;
-    align-content: center;
-}
-/fim de navegador/
-div{
-    background-color:#0e1621;
-    width: 25%;
-    height: 590px;
-    display: inline-block;
-    /float: left/
-    color: white;
-}
-
-.chat{
-    display: inline-block;
-    width: 74%;
-    border-radius: 30px;
-    border: 1px solid #0e1621;
-    background-color: #232f3d;
-    /float: right/
-    height: 535px;
-    margin-top: 35px;
-    position: fixed;
-    margin-left: 10px;
-}
-
-body{
-    background-color: #0e1621;
-    flex-wrap: wrap;
-}
-
-input{
-    margin-top: 450px;
-    width: 90%;
-    border-radius: 30px;
-    padding: 20px 40px;
-    margin-left: 10px;
-    background-color: #0e1621;
-    border: none;
-    outline: none;
-    color: white;
-}
-
-.pesquisa{
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 0px;
-    color: white;
-    background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: white;
-    margin-left: 10px;
-    outline: none;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-}
-
-button{
-    padding: 20px 20px;
-    margin-left: 10px;
-    border-radius: 100px;
-    color: white;
-    background-color: #0e1621;
-    border: none;
-    outline: none;
-}
-
-button:hover{
-    background-color: #0e1621;
-    color: white;
-    border: 1px solid orange;
-}
-
-.navegador-artigos{
-    display: flex-end;
-    border: 1px solid white;
-    width: 90%;
-    height: 40px;
-    margin-top: 450px;
-    margin-left: 10px;
-    align-content: center;
-    border-left: none;
-    border-right: none;
-}
-
-.nv-art{
-    margin-right: 20px;
-    margin-top: 3px;
-}
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0e1621;
+        }
+        li {
+            display: inline-block;
+            color: aliceblue;
+        }
+        .left {
+            float: left;
+            width: 30%;
+            background-color: #0e1621;
+            height: 90dvh;
+            margin-left: 15px;
+        }
+        .right {
+            float: right;
+            width: 65%;
+            background-color: white;
+            height: 90dvh;
+            margin-right: 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .message-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .messege {
+            flex: 1;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .send-button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #0e1621;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .border {
+            border: 2px solid white;
+            width: 100%;
+            margin-top: 430px;
+            padding: 10px 20px;
+            border-left: none;
+            border-right: none;
+        }
+        .procuras {
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 0px;
+            color: white;
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-color: white;
+            margin-left: 10px;
+            outline: none;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .left, .right {
+                float: none;
+                width: 100%;
+                margin: 0;
+                height: auto;
+            }
+            .right {
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-
-<!--navegor inicio-->
     <nav>
         <ul>
-            <li class="one"><a href="#">Settings</a></li>
-            <li><a href="#">Mega Imperio commnunity</a></li>
-            <li class="two"><a href="#">profile</a></li>
+            <li style="float: left;">Config</li>
+            <li style="float: right;">Profile</li>
         </ul>
-    </nav>
- <!--navegador fim-->
-
-
-  <!--artigos em navegador inicio-->
+    </nav><br>
+    <hr style="color: white;"><br>
     <div>
-      <p>
-        <a href="#">Contacts</a><br>
-        <input class="pesquisa" type="text" placeholder="Search">
-      </p>
-       <p>
-        <ul class="navegador-artigos">
-            <li class="nv-art"><a href=""><span id="menu" class="material-symbols-outlined">
-                sms
-                </span></a></li>
-            <li class="nv-art"> <span id="menu" class="material-symbols-outlined">
-                groups
-                </span></li>
-            <li class="nv-art"> <span id="menu" class="material-symbols-outlined">
-                videocam
-                </span></li>
-            <li class="nv-art"> <span id="menu" class="material-symbols-outlined">
-                currency_bitcoin
-                </span></li>
-            <li class="nv-art"> <span id="menu" class="material-symbols-outlined">
-                store
-                </span></li>
-           </ul>
-       </p>
+        <div class="left">
+            <input class="procuras" type="text" placeholder="Procurar">
+            <div class="border">
+                hello
+            </div>
+        </div>
+        <div class="right">
+            <div class="message-container">
+                <input class="messege" type="text" placeholder="Mensagem">
+                <button class="send-button">Enviar</button>
+            </div>
+        </div>
     </div>
-<!--artigos em navegador fim-->
-
-
-<!--campo de mensa em inline block, inicio-->
-    <div class="chat">
-      <p>
-        <input type="text" placeholder="Messege"><button>→</button>
-      </p>
-    </div>
-<!--campo de mensagem fim-->
-
-   <!--<script src="script.js"></script>-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
